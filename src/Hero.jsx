@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import arrow from "./assets/icon-arrow.svg";
 
 function Hero() {
@@ -10,7 +10,6 @@ function Hero() {
     }
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(data + "? stolen heheha");
     }
     return (
         <div className="bg-[url('./assets/pattern-bg-mobile.png')] md:bg-[url('./assets/pattern-bg-desktop.png')] bg-cover w-screen h-72 text-center flex flex-col align-center justify-center gap-10">
