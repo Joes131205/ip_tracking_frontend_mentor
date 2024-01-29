@@ -1,4 +1,4 @@
-function Info() {
+function Info(props) {
     return (
         <div className="absolute top-[25%] left-[24%] bg-white px-10 py-10 rounded-lg">
             <div className="grid grid-cols-4 divide-x w-[60rem] bg-[hsl(0, 0%, 59%)] gap-2 ">
