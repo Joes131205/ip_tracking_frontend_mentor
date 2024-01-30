@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function Map(props) {
     return (
@@ -6,15 +6,14 @@ function Map(props) {
             center={[props.lat, props.lng]}
             zoom={13}
             scrollWheelZoom={false}
+            className="w-full h-[69.8%] z-0 absolute overflow-hidden"
         >
             <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution="Google Maps"
+                url="https://www.google.cn/maps/vt?lyrs=m@189&gl=cn&x={x}&y={y}&z={z}"
             />
             <Marker position={[props.lat, props.lng]}>
-                <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
+                <Popup>{`${props.lat}, ${props.lng}`}</Popup>
             </Marker>
         </MapContainer>
     );
