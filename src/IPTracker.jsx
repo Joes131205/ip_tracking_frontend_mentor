@@ -6,14 +6,16 @@ import Search from "./Search.jsx";
 
 function Hero() {
     const [data, setData] = useState("");
+
     const [info, setInfo] = useState({
-        ip: "",
-        location: "",
-        timezone: "",
-        isp: "",
-        lat: 69,
-        lng: 69,
+        ip: "192.212.174.101",
+        location: "Brooklyn, NY 10001",
+        timezone: "UTC -05:00",
+        isp: "SpaceX Starlink",
+        lat: 34.04915,
+        lng: -118.09462,
     });
+    // Info above uses the info from design images
 
     function handleChange(e) {
         const ip = e.target.value;
@@ -63,7 +65,7 @@ function Hero() {
     }
 
     return (
-        <div>
+        <div className="">
             <Search submit={handleSubmit} change={handleChange} />
             <Info
                 ip={info.ip}

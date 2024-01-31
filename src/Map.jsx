@@ -4,8 +4,8 @@ function Map(props) {
     return (
         <MapContainer
             center={[props.lat, props.lng]}
-            zoom={13}
-            scrollWheelZoom={false}
+            zoom={5}
+            scrollWheelZoom={true}
             className="w-full h-[69.8%] z-0 absolute overflow-hidden"
         >
             <TileLayer

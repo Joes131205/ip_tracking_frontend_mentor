@@ -16,7 +16,7 @@ function Search(props) {
                 />
                 <button
                     type="submit"
-                    className="bg-black h-10 w-10 rounded-e-md flex justify-center items-center "
+                    className=" h-10 w-10 rounded-e-md flex justify-center items-center hover:bg-[hsl(0, 0%, 17%)] bg-black"
                 >
                     <img src={arrow} alt="arrow" className="w-2" />
                 </button>
